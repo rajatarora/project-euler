@@ -30,5 +30,12 @@ namespace Euler
             }
             return true;
         }
+
+        public static Boolean IsPalindrome(string input)
+        {
+            char[] arrInput = input.ToCharArray();
+            Array.Reverse(arrInput);
+            return input.Equals(new string(arrInput));
+        }
     }
 }
