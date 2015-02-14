@@ -37,5 +37,17 @@ namespace Euler
             Array.Reverse(arrInput);
             return input.Equals(new string(arrInput));
         }
+
+        public static Boolean IsPythagoreanTriplet(int a, int b, int c)
+        {
+            if (a < b && b < c)
+            {
+                return (Math.Pow(a, 2) + Math.Pow(b, 2)) == Math.Pow(c, 2);
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

@@ -19,6 +19,8 @@ namespace Test
             Console.WriteLine(new Problem006().execute());
             Console.WriteLine(new Problem007().execute());
             Console.WriteLine(new Problem008().execute());
+            Console.WriteLine(new Problem009().execute());
+            Console.WriteLine(new Problem010().execute());
             Console.ReadKey();
         }
     }
