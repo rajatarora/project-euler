@@ -21,10 +21,10 @@ namespace Euler
 
         public static Boolean IsPrime(long number)
         {
-            if (number == 2) return true;
+            if (number == 2 || number == 3) return true;
             double sqrtNumber = Math.Sqrt(number);
 
-            for (long i = 3; i < sqrtNumber; i++)
+            for (long i = 2; i <= sqrtNumber; i++)
             {
                 if (number % i == 0) return false;
             }
