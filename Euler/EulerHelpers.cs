@@ -18,5 +18,17 @@ namespace Euler
             fibonacci.Remove(fibonacci[fibonacci.Count - 1]);
             return fibonacci;
         }
+
+        public static Boolean IsPrime(long number)
+        {
+            if (number == 2) return true;
+            double sqrtNumber = Math.Sqrt(number);
+
+            for (long i = 3; i < sqrtNumber; i++)
+            {
+                if (number % i == 0) return false;
+            }
+            return true;
+        }
     }
 }

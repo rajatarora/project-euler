@@ -13,6 +13,7 @@ namespace Test
         {
             Console.WriteLine(new Problem001().execute());
             Console.WriteLine(new Problem002().execute());
+            Console.WriteLine(new Problem003().execute());
             Console.ReadKey();
         }
     }
